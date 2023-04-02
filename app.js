@@ -7,7 +7,7 @@ var temp = document.querySelector('.temp');
     
 function fetchApi() {
             
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&units=metric&lang=sv&appid=78cc52620ef2e1a839eee97a0d2c1c42')
+    fetch(meta 'http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&units=metric&lang=sv&appid=78cc52620ef2e1a839eee97a0d2c1c42')
     .then(response => response.json())
     .then(data => {
 
