@@ -11,7 +11,7 @@ camera.lookAt(0, 0, 0)
 
 
 
-const renderer = new THREE.WebGlRenderer({
+const renderer = new THREE.WebGLRenderer({
 antialias: true,
 alpha: true,
 
