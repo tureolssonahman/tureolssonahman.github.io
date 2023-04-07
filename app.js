@@ -1,6 +1,6 @@
 const threejsCanvas = document.querySelector('#threejs-canvas')
 let widht = threejsCanvas.offsetWidht
-let height = threejsCanvas.iffsetHeight
+let height = threejsCanvas.offsetHeight
 
 
 
