@@ -1,37 +1,22 @@
-const threejsCanvas = document.querySelector('#threejs-canvas')
-let widht = threejsCanvas.offsetWidht
-let height = threejsCanvas.offsetHeight
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
 
+const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+cube.rotation.x =  0.5;
+scene.add( cube );
 
-const scene = new THREE.Scene()
-const camera = new THREE.PerspectiveCamera(70, widht/height, 1, 1000)
-camera.position.set(10, 10, 10)
-camera.lookAt(0, 0, 0)
+camera.position.z = 5;
 
-
-
-const renderer = new THREE.WebGLRenderer({
-antialias: true,
-alpha: true,
-
-})
-
-renderer.setSize(widht, height)
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-threejsCanvas.appendChild(renderer.domElement)
-
-
-
-const geometry = new THREE.BoxGeometry(5, 5, 5)
-const material = new THREE.MeshBasicMaterial({ color: 0x00ffff})
-const box = new THREE.Mesh(geometry, material)
-scene.add(box)
-
-
-function update(){
-    renderer.render(scene, camera)
-    window.requestAnimationFrame(update)
+function animate() {
+	requestAnimationFrame( animate );
+    cube.rotation.y += 0.01;
+	renderer.render( scene, camera );
 }
 
-update()
+animate();
