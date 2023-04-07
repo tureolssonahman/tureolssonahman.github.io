@@ -29,8 +29,9 @@ const box = new THREE.Mesh(geometry, material)
 scene.add(box)
 
 
-update()
-
-function update()
+function update(){
     renderer.render(scene, camera)
     window.requestAnimationFrame(update)
+}
+
+update()
