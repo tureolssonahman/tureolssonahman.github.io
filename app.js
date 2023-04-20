@@ -10,7 +10,7 @@ document.body.appendChild( renderer.domElement );
 
 const loader = new GLTFLoader();
 
-loader.load( 'C:\Users\Ture\OneDrive\Skrivbord\onödig skit\Olika typer/Test.glb', function ( gltf ) {
+loader.load( 'Test.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 });
 
