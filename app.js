@@ -21,6 +21,9 @@ const cube = new THREE.Mesh( geometry, material );
 cube.rotation.x =  0.5;
 scene.add( cube );
 
+const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+scene.add( light );
+
 camera.position.z = 5;
 
 function animate() {
