@@ -10,7 +10,7 @@ document.body.appendChild( renderer.domElement );
 
 const loader = new GLTFLoader();
 
-loader.load( 'Test.glb', function ( gltf ) {
+loader.load( 'C:\Users\Ture\OneDrive\Skrivbord\onödig skit\Olika typer/Test.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 });
 
@@ -21,12 +21,11 @@ const cube = new THREE.Mesh( geometry, material );
 cube.rotation.x =  0.5;
 scene.add( cube );
 
-
 camera.position.z = 5;
 
 function animate() {
 	requestAnimationFrame( animate );
-	cube.rotation.y += 0.01;
+    cube.rotation.y += 0.01;
 	renderer.render( scene, camera );
 }
 
