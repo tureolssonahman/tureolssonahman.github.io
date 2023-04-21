@@ -24,7 +24,7 @@ camera.position.x = -20;
 
 function animate() {
 	requestAnimationFrame( animate );
-    	loader.rotation.y += 0.01;
+    	loader.rotation += 0.01;
 	renderer.render( scene, camera );
 }
 
