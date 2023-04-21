@@ -14,6 +14,7 @@ loader.load( 'Test.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 });
 
+scene.background = new THREE.Color(0xffffff);
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
@@ -24,7 +25,7 @@ scene.add( cube );
 const light = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( light );
 
-camera.position.z = 5;
+camera.position.z = 25;
 
 function animate() {
 	requestAnimationFrame( animate );
