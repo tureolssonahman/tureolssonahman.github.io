@@ -19,7 +19,7 @@ scene.background = new THREE.Color(0xffffff);
 const light = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( light );
 
-camera.position.z = 250;
+camera.position.z = 125;
 
 function animate() {
 	requestAnimationFrame( animate );
