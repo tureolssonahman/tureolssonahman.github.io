@@ -16,7 +16,7 @@ loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
 
 scene.background = new THREE.Color(0xffffff);
 
-const light = new THREE.AmbientLight( 0x404040 ):
+const light = new THREE.AmbientLight( 0x404040 );
 scene.add( light );
 
 camera.position.z = 190;
