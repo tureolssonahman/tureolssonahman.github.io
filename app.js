@@ -1,12 +1,17 @@
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
+const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
+
+const controls = new OrbitControls( camera, renderer.domElement );
+//controls.update() must be called after any manual changes to the camera's transform
+camera.position.set( 0, 20, 100 );
+controls.update();
 
 const loader = new GLTFLoader();
 
@@ -16,7 +21,7 @@ loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
 
 scene.background = new THREE.Color(0xffffff);
 
-const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+const light = new THREE.AmbientLight( 0x404040 ):
 scene.add( light );
 
 camera.position.z = 190;
