@@ -8,11 +8,6 @@ document.body.appendChild( renderer.domElement );
 
 const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
 
-const controls = new OrbitControls( camera, renderer.domElement );
-//controls.update() must be called after any manual changes to the camera's transform
-camera.position.set( 0, 20, 100 );
-controls.update();
-
 const loader = new GLTFLoader();
 
 loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
