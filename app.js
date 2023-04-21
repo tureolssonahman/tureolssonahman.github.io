@@ -21,7 +21,7 @@ scene.add( light );
 
 camera.position.x = -20;
 camera.position.y = 25;
-camera.position.z = 200;
+//camera.position.z = 200;
 
 function animate() {
 	requestAnimationFrame( animate );
