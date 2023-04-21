@@ -19,9 +19,9 @@ scene.background = new THREE.Color(0xffffff);
 const light = new THREE.AmbientLight( 0x404040 );
 scene.add( light );
 
-camera.position.x = -25;
-camera.position.y = 25;
-//camera.position.z = 10;
+camera.position.x = -15;
+camera.position.y = 5;
+camera.position.z = 10;
 
 function animate() {
 	requestAnimationFrame( animate );
