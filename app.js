@@ -24,6 +24,7 @@ camera.position.x = -20;
 
 function animate() {
 	requestAnimationFrame( animate );
+	gltf.rotation.x += 0.5;
 	renderer.render( scene, camera );
 }
 
