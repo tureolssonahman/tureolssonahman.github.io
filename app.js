@@ -10,7 +10,7 @@ document.body.appendChild( renderer.domElement );
 
 const loader = new GLTFLoader();
 
-loader.load( 'Test.glb', function ( gltf ) {
+loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 });
 
