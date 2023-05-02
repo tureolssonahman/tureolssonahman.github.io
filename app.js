@@ -10,6 +10,7 @@ document.body.appendChild( renderer.domElement );
 const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
 camera.position.set(-32.5, 15, 190);
 
+const controls = new OrbitControls( camera, renderer.domElement );
 
 const loader = new GLTFLoader();
 loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
@@ -27,6 +28,7 @@ function animate() {
 	requestAnimationFrame( animate );
 	camera.position.x += Math.sin(counter*0.01)*0.05;
 	camera.position.y -= Math.sin(counter*0.02)*0.05;
+	controls.update();
 	renderer.render( scene, camera );
 }
 
