@@ -8,7 +8,7 @@ document.body.appendChild( renderer.domElement );
 
 const camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 10000 );
 camera.position.set(-32.5, 15, 190);
-
+camera.lookAt(-32.5, 0, 0)
 const loader = new GLTFLoader();
 loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
 	loader.scene.roation.y = 0.5;
