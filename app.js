@@ -11,8 +11,9 @@ camera.position.set(-32.5, 15, 190);
 camera.lookAt(-32.5, 0, 0)
 const loader = new GLTFLoader();
 loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
-	gltf.scene.rotation.y = 0.5;
-	scene.add( gltf.scene );
+	const model = glft.scene;
+	model.rotation.y = 0.5;
+	scene.add( model );
 });
 
 const light = new THREE.PointLight(0xffffff, 1.5, 0);
@@ -24,7 +25,7 @@ let counter = -20;
 function animate() {
 	counter++;
 	requestAnimationFrame( animate );
-
+	model.rotation.y += 0.1;
 	renderer.render( scene, camera );
 }
 
