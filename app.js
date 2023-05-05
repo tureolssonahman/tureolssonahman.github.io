@@ -11,7 +11,7 @@ camera.position.set(-32.5, 15, 190);
 camera.lookAt(-32.5, 0, 0)
 const loader = new GLTFLoader();
 loader.load( 'Teknikkorridoren_v2.glb', function ( gltf ) {
-	loader.scene.rotation.y = 0.5;
+	loader.rotation.y = 0.5;
 	scene.add( gltf.scene );
 });
 
