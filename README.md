@@ -13,7 +13,7 @@ På hemsidan får du även se kameran svepa över korridoren vilket ger dig möj
 
 **Arbetsgången** 
 
-Koden har jag primärt skrivit i VsCode och sedan laddat upp på github till mitt egna repository. För att skapa själva hemsidan började jag skapa ett skal eller en grund där jag sedan kunde importera 3d-filmerna. Det innebär först att skapa ett html framework och grundlig kod i Three.js där du bland annat skapar en kamera och en rityta.
+Koden har jag primärt skrivit i VsCode och sedan laddat upp på github till mitt egna repository. För att skapa själva hemsidan började jag skapa ett skal eller en grund där jag sedan kunde importera 3d-filerna. Det innebär först att skapa ett html framework och grundlig kod i Three.js där du bland annat skapar en kamera och en rityta.
 
 Därefter började 3d skapandet i blender. Jag började med att utforma de stora ytorna, det vill säga golv, väggar och rum. Sedan adderade jag skåpen och de stora möblerna. Till sist försökte jag lägga till en personlig touch med mer detaljer. Däribland husen i foamboard som står utplacerade i korridoren och andra arbeten som visas runt om, i detta fall bron av glasspinnar. 
 
@@ -33,7 +33,7 @@ Jag valde att skapa 3D modellen i blender, ett gratis  och open-source program l
 
 Det absolut största problemet jag stötte på längs vägen var att importera orbit controls till mitt three.js arbete. Jag försökte flera timmar på olika vis men fick det aldrig att fungera. Idén från början var att användaren själv skulle kunna zooma och kolla omkring, men istället skapade jag en funktion som flyttade kameran automatiskt och “siktade in” den på en specifik punkt vilket gjorde att kameran upplevs som levande  och lite verklig.
 
-Jag hade även en idé att implementera flera olika delar av skolan i projektet. Men tiden sprang ikapp mig och idén blev kastad. De tidiga stadierna av 3d filen går att se här:
+Jag hade även en idé att implementera flera olika delar av skolan i projektet. Men tiden sprang ikapp mig och idén blev kastad. De tidiga stadierna av 3d filen går att ladda ned: _Aulan_v1.glb_.
 
 **Värdering**
 
@@ -44,7 +44,8 @@ Dessutom blev många saker lite väl kantiga och enfärgade. Ifall jag hade gjor
 **Inspirationskällor**
 
 Jag har tidigare sett webbsidor i 3D och tanken slog mig att det var ett bra projekt för slutarbetet. Jag har dock inga konkreta inspirationskällor. När jag började arbetet kollade jag på lite olika hemsidor för att se hur jag borde lägga upp projektet, men i slutändan blev det inte så likt dem.
-Spridning/publicering
+
+**Spridning/publicering**
 
 För att publicera koden och de filer som jag skapat har jag använt mig av github, en hemsida där man kan publicera och ta del av andras verk. Github används i både kommersiellt och privat bruk och lämpar sig väl till projekt som detta eftersom de är gratis att skapa ett konto, du kan bidra till projektet från olik datorer, och det mest väsentliga i detta arbete, det tillåter dig att publicera dessa filer till en domän helt gratis. Github pages gjorde det alltså möjligt att publicera detta arbete, inte bara så man kan ladda ner filerna från github-repository’t, utan även besöka det som en hemsida. 
 
